@@ -1,0 +1,39 @@
+#capture.post-box.t-Ani.perspective
+  .header
+  #card.namecard.t-Ani.ani.preserve-3d
+    h2 麥大名
+      span (My name)
+    hr
+    h5 簡介：
+    p 喜歡網頁互動特效，為呈現心中的畫面而努力。
+    .circle.circle1
+    .circle.circle2
+    .circle.circle3
+  .footer
+    button#aniBtn.btn(onclick="stop_ani();changeIcon('i','fa-pause','fa-play')", name="停止/開始&nbsp;動畫") 
+      i.fas.fa-pause 
+    button.btn(onclick="block_capture()", name="點我截圖")
+      i.fa-solid.fa-crop-simple
+    button.btn(onclick="download_capture()", name="下載圖片") 
+      i.fas.fa-download
+
+//- .page_title
+  p 備註：無法印出透視變形(CSS/preserve-3d)
+  p 參考來源：
+  ol
+    //- li
+    //-   a(href="https://progressbar.tw/posts/47", target="_blank") [JavaScript] 上傳圖片不難，那上傳同時預覽呢？
+    li 
+      a(href="https://mnya.tw/cc/word/1573.html", target="_blank") Javascript ：將 HTML 網頁上的區塊轉換成 JPG圖檔 
+    li
+      a(href="https://iter01.com/633589.html", target="_blank") javascript實現網頁截圖匯出方案 
+    //- li
+    //-   a(href="https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/2170/", target="_blank") 用dom-to-image將html生成圖片 
+    li
+      a(href="https://stackoverflow.com/questions/10721884/render-html-to-an-image", target="_blank") Render HTML to an image
+    li
+      a(href="https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded", target="_blank")  Preview an image before it is uploaded
+    li
+      a(href="https://ithelp.ithome.com.tw/articles/10212859?sc=rss.qu", target="_blank") JS-上傳圖片前預覽圖片
+    li
+      a(href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button" target="_blank") mdn web docs[input type="button"]
