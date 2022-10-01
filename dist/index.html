@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - 3D-Namecard 播放器[ES6]</title>
+  <title>CodePen - 3D卡片播放器[ES6]</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
@@ -21,8 +21,8 @@
   </div>
   <div class="footer">
     <button class="btn" id="aniBtn" onclick="stop_ani();changeIcon('i','fa-pause','fa-play')" name="停止/開始&amp;nbsp;動畫"> <i class="fas fa-pause"> </i></button>
-    <button class="btn" onclick="block_capture()" name="點我截圖"><i class="fa-solid fa-crop-simple"></i></button>
-    <button class="btn" onclick="download_capture()" name="下載圖片"> <i class="fas fa-download"></i></button>
+    <button class="btn" onclick="callfunc(block_capture,domtoimage)" name="點我截圖"><i class="fa-solid fa-crop-simple"></i></button>
+    <button class="btn" onclick="callfunc(download_capture,domtoimage)" name="下載圖片"> <i class="fas fa-download"></i></button>
   </div>
 </div>
 <!-- partial -->

@@ -12,9 +12,9 @@
   .footer
     button#aniBtn.btn(onclick="stop_ani();changeIcon('i','fa-pause','fa-play')", name="停止/開始&nbsp;動畫") 
       i.fas.fa-pause 
-    button.btn(onclick="block_capture()", name="點我截圖")
+    button.btn(onclick="callfunc(block_capture,domtoimage)", name="點我截圖")
       i.fa-solid.fa-crop-simple
-    button.btn(onclick="download_capture()", name="下載圖片") 
+    button.btn(onclick="callfunc(download_capture,domtoimage)", name="下載圖片") 
       i.fas.fa-download
 
 //- .page_title

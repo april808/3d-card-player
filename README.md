@@ -10,4 +10,5 @@ A Pen created on CodePen.io.
 說明：
 
 1. `<button>` CSS相關設定。
-2. ES6 函數模組化寫法。
+1. ES6 寫法、JS套件函數模組化。
+1. 截圖功能無法印出透視變形(CSS/preserve-3d)
