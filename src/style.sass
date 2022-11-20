@@ -39,7 +39,7 @@ $ani-bg: ani-namecard
 *
   // border: 1px solid white
   box-sizing: border-box
-  font-family: 微軟正黑體
+  font-family: Microsoft JhengHei
   position: relative
   
 html,body
@@ -213,3 +213,19 @@ html,body
     
 .js-stop-ani
   animation-play-state: paused //停止動畫
+
+#block-img
+  max-width: calc(400px - 200px)
+  max-height: 450px
+  overflow: scroll
+  border-radius: 5px
+  margin-left: 20px
+  display: flex
+  flex-wrap: wrap /*被束縛，換行*/
+  position: relative
+  background-color: rgba(black,0.2)
+  
+  img
+    margin: 10px 5px
+    max-width: 40px
+    min-width: 30px

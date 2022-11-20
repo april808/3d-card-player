@@ -29,7 +29,11 @@ block_capture = js_plugin => {
   then(function (dataUrl) {
     let img = new Image();
     img.src = dataUrl;
-    document.body.appendChild(img);
+    var el_block = document.querySelector("#block-img");
+    el_block.appendChild(img);
+    // document.body.appendChild(img);
+    // console.log(img);
+    // console.log(el_block.innerHTML);
   }).
   catch(function (error) {
     console.error("失敗!", error);

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  font-family: 微軟正黑體;
+  font-family: Microsoft JhengHei;
   position: relative;
 }
 
@@ -202,4 +202,21 @@ html, body {
 .js-stop-ani {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
+}
+
+#block-img {
+  max-width: calc(400px - 200px);
+  max-height: 450px;
+  overflow: scroll;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#block-img img {
+  margin: 10px 5px;
+  max-width: 40px;
+  min-width: 30px;
 }
