@@ -1,0 +1,20 @@
+#capture.post-box.t-Ani.perspective
+  .header
+  #card.namecard.t-Ani.ani.preserve-3d
+    h2 麥大名
+      span (My name)
+    hr
+    h5 簡介：
+    p 喜歡網頁互動特效，為呈現心中的畫面而努力。
+    .circle.circle1
+    .circle.circle2
+    .circle.circle3
+  .footer
+    button#aniBtn.btn(onclick="stop_ani();changeIcon('i','fa-pause','fa-play')", name="停止/開始&nbsp;動畫") 
+      i.fas.fa-pause 
+    button.btn(onclick="callfunc(block_capture,domtoimage)", name="點我截圖")
+      i.fa-solid.fa-crop-simple
+    button.btn(onclick="callfunc(download_capture,domtoimage)", name="下載圖片") 
+      i.fas.fa-download
+.block
+  #block-img.grid

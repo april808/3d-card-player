@@ -85,18 +85,6 @@ html, body {
   border: solid 3px SandyBrown;
 }
 
-.page_title {
-  margin-top: 20px;
-  text-align: left;
-  color: #555;
-  letter-spacing: 3px;
-  font-weight: 500;
-  position: absolute;
-  bottom: 30px;
-  left: 10px;
-  z-index: 1;
-}
-
 .post-box {
   width: 400px;
   height: auto;
@@ -204,19 +192,22 @@ html, body {
           animation-play-state: paused;
 }
 
-#block-img {
-  max-width: calc(400px - 200px);
-  max-height: 450px;
+.block {
+  max-width: 440px;
   overflow: scroll;
+  scrollbar-gutter: stable;
   border-radius: 5px;
   margin-left: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  position: sticky;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
-#block-img img {
-  margin: 10px 5px;
-  max-width: 40px;
-  min-width: 30px;
+
+#block-img.grid {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(auto-fill, minmax(5em, 1fr));
+}
+#block-img.grid img {
+  width: 100%;
 }

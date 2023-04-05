@@ -3,45 +3,45 @@ const stop_ani = () => {
   element.classList.toggle("js-stop-ani");
 };
 // change-icon-----------
-const changeIcon = (elClass, FAicon1, FAicon2) => {
+const changeIcon = (elClass,FAicon1,FAicon2) => {
   let icon = document.querySelector(elClass);
   if (icon.classList[1] === FAicon1) {
     icon.classList.remove(FAicon1);
     icon.classList.add(FAicon2);
-  } else {
+  }else{
     icon.classList.add(FAicon1);
     icon.classList.remove(FAicon2);
   }
-};
+}
 
 // 引用函數-----------
-callfunc = (func, r) => {
+callfunc = (func,r) => {
   // console.log(func)
-  return func(r);
-};
+  return func(r)
+}
 // 截圖函數-----------
-/*domtoimage - 螢幕@1x*/
-/*htmlToImage - 螢幕@2x(有繪製時間)*/
-block_capture = js_plugin => {
+  /*domtoimage - 螢幕@1x*/
+  /*htmlToImage - 螢幕@2x(有繪製時間)*/
+block_capture = (js_plugin) => {
   let node = document.getElementById("capture");
-  js_plugin.
-  toPng(node).
-  then(function (dataUrl) {
-    let img = new Image();
-    img.src = dataUrl;
-    var el_block = document.querySelector("#block-img");
-    el_block.appendChild(img);
-    // document.body.appendChild(img);
-    // console.log(img);
-    // console.log(el_block.innerHTML);
-  }).
-  catch(function (error) {
-    console.error("失敗!", error);
-  });
+  js_plugin
+    .toPng(node)
+    .then(function (dataUrl) {
+      let img = new Image();
+      img.src = dataUrl;
+      var el_block = document.querySelector("#block-img");
+      el_block.appendChild(img);
+      // document.body.appendChild(img);
+      // console.log(img);
+      // console.log(el_block.innerHTML);
+    })
+    .catch(function (error) {
+      console.error("失敗!", error);
+    });
 };
 // 下載函數-----------
 /*研究 a標籤的download*/
-download_capture = js_plugin => {
+download_capture = (js_plugin) => {
   let node = document.getElementById("capture");
   js_plugin.toPng(node).then(function (dataUrl) {
     let a = document.createElement("a");

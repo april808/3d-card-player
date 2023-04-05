@@ -112,18 +112,6 @@ html,body
   background-color: $colorCircle
   border: $colorCircleBorder
 
-
-.page_title
-  margin-top: 20px
-  text-align: left
-  color: #555
-  letter-spacing: 3px
-  font-weight: 500
-  position: absolute
-  bottom: 30px
-  left: 10px
-  z-index: 1
-  
 .post-box
   +size(400px,auto)
   +flexCenter
@@ -214,18 +202,22 @@ html,body
 .js-stop-ani
   animation-play-state: paused //停止動畫
 
-#block-img
-  max-width: calc(400px - 200px)
-  max-height: 450px
+.block
+  max-width: 440px
+  
   overflow: scroll
+  scrollbar-gutter: stable
   border-radius: 5px
   margin-left: 20px
-  display: flex
-  flex-wrap: wrap /*被束縛，換行*/
-  position: relative
+  // display: flex
+  // flex-wrap: wrap /*被束縛，換行*/
+  // justify-content: center
+  position: sticky
+  bottom: 0
   background-color: rgba(black,0.2)
-  
+#block-img.grid
+  display: grid
+  grid-gap: 6px
+  grid-template-columns: repeat(auto-fill, minmax(5em,1fr))
   img
-    margin: 10px 5px
-    max-width: 40px
-    min-width: 30px
+    width: 100%
