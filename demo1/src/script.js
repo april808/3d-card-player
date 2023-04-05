@@ -1,18 +1,31 @@
-const stop_ani = () => {
+// change-icon-----------
+// const changeIcon = (elClass,FAicon1,FAicon2) => {
+//   let icon = document.querySelector(elClass);
+//   if (icon.classList[1] === FAicon1) {
+//     icon.classList.remove(FAicon1);
+//     icon.classList.add(FAicon2);
+//   }else{
+//     icon.classList.add(FAicon1);
+//     icon.classList.remove(FAicon2);
+//   }
+// }
+var aniBtn = document.getElementById("aniBtn");
+// var icon = aniBtn.querySelector("i")
+aniBtn.addEventListener('click', function(){
+  
+  // stop_ani
   let element = document.getElementById("card");
   element.classList.toggle("js-stop-ani");
-};
-// change-icon-----------
-const changeIcon = (elClass,FAicon1,FAicon2) => {
-  let icon = document.querySelector(elClass);
-  if (icon.classList[1] === FAicon1) {
-    icon.classList.remove(FAicon1);
-    icon.classList.add(FAicon2);
-  }else{
-    icon.classList.add(FAicon1);
-    icon.classList.remove(FAicon2);
+  
+  // change-icon-----------
+  const toggleClass  = document.querySelectorAll('[data-toggle-class]');
+  if (toggleClass) {
+    for (let i = 0; i < toggleClass.length; i ++) {
+      const el = toggleClass[i];
+      el.classList.toggle("hidden");
+    }
   }
-}
+})
 
 // 引用函數-----------
 callfunc = (func,r) => {

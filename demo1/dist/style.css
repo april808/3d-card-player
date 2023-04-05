@@ -17,6 +17,10 @@ html, body {
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .t-Ani {
   transition: all 1s;
 }

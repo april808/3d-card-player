@@ -2,8 +2,8 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - 3D卡片播放器[ES6]2</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+  <title>CodePen - 3D卡片播放器[ES6]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
@@ -20,7 +20,7 @@
     <div class="circle circle3"></div>
   </div>
   <div class="footer">
-    <button class="btn" id="aniBtn" onclick="stop_ani();changeIcon('i','fa-pause','fa-play')" name="停止/開始&amp;nbsp;動畫"> <i class="fas fa-pause"> </i></button>
+    <button class="btn" id="aniBtn" name="停止/開始&amp;nbsp;動畫"> <i class="fas fa-pause" data-toggle-class="data-toggle-class"></i><i class="fas fa-play hidden" data-toggle-class="data-toggle-class"></i></button>
     <button class="btn" onclick="callfunc(block_capture,domtoimage)" name="點我截圖"><i class="fa-solid fa-crop-simple"></i></button>
     <button class="btn" onclick="callfunc(download_capture,domtoimage)" name="下載圖片"> <i class="fas fa-download"></i></button>
   </div>
@@ -29,7 +29,8 @@
   <div class="grid" id="block-img"></div>
 </div>
 <!-- partial -->
-  <script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js'></script>
+<script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.10.8/html-to-image.js'></script><script  src="./script.js"></script>
 
