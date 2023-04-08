@@ -2,7 +2,7 @@
 
 預覽：
 
-1. GitHub: [3D卡片播放器-網頁截圖功能](./demo1/dist/index.html)
+1. GitHub: [3D卡片播放器-網頁截圖功能](https://april808.github.io/3d-card-player/demo1/dist/index.html)
 
 說明：
 
